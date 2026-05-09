@@ -1,0 +1,43 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.9639319047927857,
+      "validation_loss": 4.299821891784668,
+      "validation_metrics": {
+        "overall": {
+          "diacritic_cer": 0.8765521785406565,
+          "exact_match": 0.0,
+          "count": 200.0
+        },
+        "msa": {
+          "diacritic_cer": 1.3798283261802575,
+          "exact_match": 0.0,
+          "count": 13.0
+        },
+        "classical": {
+          "diacritic_cer": 0.8601880440281194,
+          "exact_match": 0.0,
+          "count": 187.0
+        }
+      }
+    }
+  ],
+  "best_epoch": 1,
+  "best_validation_cer": 0.8765521785406565,
+  "test": {
+    "loss": 4.303608207702637,
+    "metrics": {
+      "overall": {
+        "diacritic_cer": 0.7817212490479817,
+        "exact_match": 0.0,
+        "count": 200.0
+      },
+      "classical": {
+        "diacritic_cer": 0.7817212490479817,
+        "exact_match": 0.0,
+        "count": 200.0
+      }
+    }
+  }
+}

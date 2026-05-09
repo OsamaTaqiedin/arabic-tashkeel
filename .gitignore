@@ -1,0 +1,5 @@
+\output
+\output_strict
+\smoke_data
+\smoke_data_tiny
+\__pycache__

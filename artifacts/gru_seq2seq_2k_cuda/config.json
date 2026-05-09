@@ -1,0 +1,20 @@
+{
+  "train_path": "C:\\Users\\User\\Documents\\New project\\smoke_data\\train.jsonl",
+  "validation_path": "C:\\Users\\User\\Documents\\New project\\smoke_data\\validation.jsonl",
+  "test_path": "C:\\Users\\User\\Documents\\New project\\smoke_data\\test.jsonl",
+  "checkpoint_dir": "C:\\Users\\User\\Documents\\New project\\artifacts\\gru_seq2seq_2k_cuda",
+  "embedding_dim": 64,
+  "encoder_hidden_size": 64,
+  "decoder_hidden_size": 128,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "epochs": 1,
+  "teacher_forcing_ratio": 0.7,
+  "gradient_clip": 1.0,
+  "dropout": 0.1,
+  "max_decode_length": 420,
+  "min_frequency": 1,
+  "num_workers": 0,
+  "device": "cuda",
+  "run_test": true
+}

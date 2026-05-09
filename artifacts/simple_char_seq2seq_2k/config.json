@@ -1,0 +1,15 @@
+{
+  "train_path": "smoke_data/train.jsonl",
+  "validation_path": "smoke_data/validation.jsonl",
+  "test_path": "smoke_data/test.jsonl",
+  "checkpoint_dir": "artifacts/simple_char_seq2seq_2k",
+  "embedding_dim": 128,
+  "hidden_size": 256,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "epochs": 5,
+  "teacher_forcing_ratio": 0.7,
+  "max_decode_length": 420,
+  "device": "cuda",
+  "run_test": true
+}
