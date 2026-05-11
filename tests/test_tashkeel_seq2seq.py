@@ -19,6 +19,7 @@ from tashkeel_seq2seq.dataset import (
     load_jsonl,
 )
 from tashkeel_seq2seq.metrics import compute_grouped_metrics, exact_match_rate, levenshtein_distance
+from tashkeel_seq2seq.metrics import case_ending_error_rate, diacritic_error_rate, word_error_rate
 
 
 TEST_TEMP_ROOT = Path(__file__).resolve().parent / ".tmp"
@@ -122,6 +123,21 @@ class MetricsTests(unittest.TestCase):
         self.assertIn("overall", metrics)
         self.assertIn("classical", metrics)
         self.assertIn("msa", metrics)
+
+    def test_diacritic_error_rate(self) -> None:
+        prediction = "هٰذَا كَتَابٌ"
+        target = "هٰذَا كِتَابٌ"
+        self.assertAlmostEqual(diacritic_error_rate([prediction], [target]), 1 / 7)
+
+    def test_word_error_rate(self) -> None:
+        prediction = "هٰذَا كَتَابٌ"
+        target = "هٰذَا كِتَابٌ"
+        self.assertAlmostEqual(word_error_rate([prediction], [target]), 1 / 2)
+
+    def test_case_ending_error_rate(self) -> None:
+        prediction = "هٰذَا كِتَابٍ"
+        target = "هٰذَا كِتَابٌ"
+        self.assertAlmostEqual(case_ending_error_rate([prediction], [target]), 1 / 2)
 
 
 @skipUnless(torch is not None, "PyTorch is not installed")
