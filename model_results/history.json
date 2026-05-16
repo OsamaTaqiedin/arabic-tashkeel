@@ -1,0 +1,67 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.14119899908770908,
+      "validation_loss": 3.0739077464157933,
+      "validation_metrics": {
+        "overall": {
+          "diacritic_cer": 0.06106277057986745,
+          "diacritic_error_rate": 0.10495614636599335,
+          "word_error_rate": 0.23340904507169405,
+          "case_ending_error_rate": 0.13443571545191743,
+          "exact_match": 0.22687045244308218,
+          "count": 144858.0
+        },
+        "classical": {
+          "diacritic_cer": 0.06071733814635863,
+          "diacritic_error_rate": 0.10453593741947624,
+          "word_error_rate": 0.23264831292414212,
+          "case_ending_error_rate": 0.13397176228087,
+          "exact_match": 0.22769517374651568,
+          "count": 143859.0
+        },
+        "msa": {
+          "diacritic_cer": 0.09973843107536608,
+          "diacritic_error_rate": 0.1499326534539157,
+          "word_error_rate": 0.32213059195661997,
+          "case_ending_error_rate": 0.188544961590601,
+          "exact_match": 0.10810810810810811,
+          "count": 999.0
+        }
+      },
+      "epoch_seconds": 111401.263272635
+    }
+  ],
+  "best_epoch": 1,
+  "best_validation_cer": 0.06106277057986745,
+  "test": {
+    "loss": 2.6418183868188203,
+    "metrics": {
+      "overall": {
+        "diacritic_cer": 0.08097410302392104,
+        "diacritic_error_rate": 0.10256015085492955,
+        "word_error_rate": 0.17156262435388067,
+        "case_ending_error_rate": 0.12286819686612595,
+        "exact_match": 0.2678971385024303,
+        "count": 107601.0
+      },
+      "classical": {
+        "diacritic_cer": 0.08041472404419525,
+        "diacritic_error_rate": 0.10192352745291504,
+        "word_error_rate": 0.1700726471980408,
+        "case_ending_error_rate": 0.12210290055393647,
+        "exact_match": 0.2693409742120344,
+        "count": 106445.0
+      },
+      "msa": {
+        "diacritic_cer": 0.14356637357924082,
+        "diacritic_error_rate": 0.17358529533250722,
+        "word_error_rate": 0.35880924733452974,
+        "case_ending_error_rate": 0.2190435975931595,
+        "exact_match": 0.13494809688581316,
+        "count": 1156.0
+      }
+    }
+  }
+}
